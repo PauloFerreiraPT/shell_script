@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Delete Google Chrome Cache files
+rm -rf ~/.config/google-chrome/Default/Cache/*
+
+# Delete Mozilla Firefox Cache files
+rm -rf ~/.mozilla/firefox/*.default/Cache/*
+
+# Delete Opera Cache files
+rm -rf ~/.opera-stable/Cache/*
+
+# Delete Safari Cache files
+rm -rf ~/Library/Safari/Cache/*
+
+echo "Cleanup completed."
