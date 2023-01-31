@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# update the package manager's repository information
+sudo apt-get update
+
+# upgrade all installed packages to the latest version
+sudo apt-get upgrade -y
+
+# check the exit status of the previous command
+# exit status of 0 means success, non-zero means failure
+if [ $? -eq 0 ]; then
+  # if the exit status is 0, the upgrade was successful
+  echo "Software update successful."
+else
+  # if the exit status is non-zero, the upgrade failed
+  echo "Software update failed."
+fi
